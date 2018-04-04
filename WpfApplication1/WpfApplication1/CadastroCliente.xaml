@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication1.CadastroCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="CadastroCliente" Height="457.894" Width="426.316">
+    <Grid>
+        <Label x:Name="label" Content="Cadastro" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="41" Width="272" FontSize="24" FontFamily="Arial Black"/>
+        <Label x:Name="lblNome" Content="Nome:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCPF" Content="CPF:" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblEnd" Content="Endereço:" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblComplemento" Content="Complemento:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTel" Content="Telefone:" HorizontalAlignment="Left" Margin="12,201,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.73,-0.342"/>
+        <Label x:Name="lblCel" Content="Celular:" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPet" Content="Pet" HorizontalAlignment="Left" Margin="10,258,0,0" VerticalAlignment="Top" Height="35" Width="378" FontFamily="Arial Black" FontSize="24"/>
+        <Label x:Name="lblNumero" Content="Número:" HorizontalAlignment="Left" Margin="12,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.29,3.89"/>
+        <Label x:Name="lblRaca" Content="Raça:" HorizontalAlignment="Left" Margin="12,298,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblNomePet" Content="Nome:" HorizontalAlignment="Left" Margin="10,329,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblIdade" Content="Idade:" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblData" Content="Data Nascimento:" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.052,0.096"/>
+
+    </Grid>
+</Window>
