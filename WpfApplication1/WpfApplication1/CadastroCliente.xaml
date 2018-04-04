@@ -20,6 +20,7 @@
         <Label x:Name="lblNomePet" Content="Nome:" HorizontalAlignment="Left" Margin="10,329,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblIdade" Content="Idade:" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblData" Content="Data Nascimento:" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.052,0.096"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="60,59,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
