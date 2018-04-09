@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for CadastroCliente.xaml
+    /// Interaction logic for Principal.xaml
     /// </summary>
-    public partial class CadastroCliente : Window
+    public partial class Principal : Window
     {
-        public CadastroCliente()
+        public Principal()
         {
             InitializeComponent();
         }
