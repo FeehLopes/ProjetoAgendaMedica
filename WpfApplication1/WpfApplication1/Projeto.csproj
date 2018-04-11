@@ -64,6 +64,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Views\BemVindo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\CadastroCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,12 +80,19 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controller\Context.cs" />
+    <Compile Include="Controller\Conexao.cs" />
+    <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="DAL\Context.cs" />
     <Compile Include="Migrations\201804092004306_Incial.cs" />
     <Compile Include="Migrations\201804092004306_Incial.Designer.cs">
       <DependentUpon>201804092004306_Incial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Controle.cs" />
+    <Compile Include="Model\Login.cs" />
+    <Compile Include="Views\BemVindo.xaml.cs">
+      <DependentUpon>BemVindo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\CadastroCliente.xaml.cs">
       <DependentUpon>CadastroCliente.xaml</DependentUpon>
     </Compile>
@@ -89,12 +100,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\CadastroLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Principal.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Views\CadastroLogin.xaml.cs">
+      <DependentUpon>CadastroLogin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Principal.xaml.cs">
       <DependentUpon>Principal.xaml</DependentUpon>
     </Compile>
@@ -131,9 +149,7 @@
   <ItemGroup>
     <Resource Include="logo pet independencia.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Model\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
