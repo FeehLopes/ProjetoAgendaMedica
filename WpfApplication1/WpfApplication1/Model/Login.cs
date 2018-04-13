@@ -14,7 +14,7 @@ namespace WpfApplication1.Model
 
         public bool acessar(String login, String senha)
         {
-            LoginController loginADM = new LoginController();
+            LoginDAO loginADM = new LoginDAO();
             tem = loginADM.VerificarLogin(login, senha);
             if (!loginADM.mensagem.Equals(""))
             {
@@ -25,15 +25,20 @@ namespace WpfApplication1.Model
 
        
 
-        public string cadastrar(String email, String senha, String confSenha)
+        public string cadastrar(String nome, string login,String senha, String confSenha)
         {
-            Login loginADM = new Login();
-            this.mensagem = loginADM.cadastrar(email, senha, confSenha);
+            LoginDAO loginADM = new LoginDAO();
+            this.mensagem = loginADM.cadastrar(nome, login, senha, confSenha);
             if (loginADM.tem)//mensagem de sucesso
             {
                 this.tem = true;
             }
             return mensagem;
+        }
+
+        internal string cadastrar(string email, string senha, string confSenha)
+        {
+            throw new NotImplementedException();
         }
     }
 }

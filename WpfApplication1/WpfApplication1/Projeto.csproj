@@ -64,10 +64,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\BemVindo.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\CadastroCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -80,8 +76,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controller\Conexao.cs" />
-    <Compile Include="Controller\LoginController.cs" />
+    <Compile Include="DAL\Conexao.cs" />
+    <Compile Include="DAL\LoginDAO.cs" />
     <Compile Include="DAL\Context.cs" />
     <Compile Include="Migrations\201804092004306_Incial.cs" />
     <Compile Include="Migrations\201804092004306_Incial.Designer.cs">
@@ -90,9 +86,6 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Controle.cs" />
     <Compile Include="Model\Login.cs" />
-    <Compile Include="Views\BemVindo.xaml.cs">
-      <DependentUpon>BemVindo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Views\CadastroCliente.xaml.cs">
       <DependentUpon>CadastroCliente.xaml</DependentUpon>
     </Compile>
@@ -149,7 +142,9 @@
   <ItemGroup>
     <Resource Include="logo pet independencia.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

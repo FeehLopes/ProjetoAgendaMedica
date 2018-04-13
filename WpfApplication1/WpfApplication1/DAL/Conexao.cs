@@ -13,7 +13,7 @@ namespace WpfApplication1.Controller
 
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=ALISSON\ALISSON;Initial Catalog=ProjetoLogin;User ID=alisson;Password=302730";
+            con.ConnectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = WpfApplication1.Controller.Context; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
         }
 
         public SqlConnection conectar()

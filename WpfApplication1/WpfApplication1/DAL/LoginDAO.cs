@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace WpfApplication1.Controller
 {
-    class LoginController
-    {
+    class LoginDAO    {
         public bool tem = false;
         public string mensagem = ""; //tudo ok
         SqlCommand cmd = new SqlCommand();
@@ -40,15 +39,17 @@ namespace WpfApplication1.Controller
             return tem;
         }
 
-        public string cadastrar(string email, string senha, string confSenha)
+        public string cadastrar(string nome,string login, string senha, string confSenha)
         {
             tem = false;
             // comandos para inserir 
             if (senha.Equals(confSenha))
             {
                 cmd.CommandText = "insert into logins values (@e,@s);";
-                cmd.Parameters.AddWithValue("@e", email);
+                cmd.Parameters.AddWithValue("@n", nome);
+                cmd.Parameters.AddWithValue("@",login);
                 cmd.Parameters.AddWithValue("@s", senha);
+                cmd.Parameters.AddWithValue("@c", confSenha);
 
                 try
                 {

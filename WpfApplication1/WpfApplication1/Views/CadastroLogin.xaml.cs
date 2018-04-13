@@ -27,8 +27,10 @@ namespace WpfApplication1.Views
 
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            Principal frm = new Principal();
+
             Controle controle = new Controle();
-            string mensagem = controle.cadastrar(txtUsuario.Text, pwdSenha.Password, pwdSenhaConf.Password);
+            string mensagem = controle.cadastrar(txtNome.Text, txtLogin.Text, pwdSenha.Password, pwdSenhaConf.Password);
             if (controle.tem)//mensagem de sucesso
             {
                 MessageBox.Show(mensagem, "Cadastro", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -39,6 +41,9 @@ namespace WpfApplication1.Views
             }
         }
 
-        
+        private void btnFechar_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

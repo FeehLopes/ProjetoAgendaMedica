@@ -5,15 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1.Views"
         mc:Ignorable="d"
-        Title="CadastroLogin" Height="528.947" Width="542.763">
+        Title="CadastroLogin" Height="546.844" Width="759.512">
     <Grid Margin="0,0,25,0">
-        <PasswordBox x:Name="pwdSenha" HorizontalAlignment="Left" Margin="86,199,0,0" VerticalAlignment="Top" Height="37" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7" RenderTransformOrigin="0.486,-0.124"/>
-        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="39" Margin="86,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00D7FF" FontSize="32"/>
-        <Label x:Name="lblUsuario" Content="  Usuário" HorizontalAlignment="Left" Margin="86,23,0,0" VerticalAlignment="Top" Width="306" FontSize="48" FontFamily="Arial Black" FontStyle="Italic" Background="{x:Null}" BorderBrush="#FF00FFB4" Foreground="#FF2800FF"/>
-        <Label x:Name="lblSenha" Content="   Senha" HorizontalAlignment="Left" Margin="86,137,0,0" VerticalAlignment="Top" Width="306" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF"/>
-        <Label x:Name="lblSenhaConf" Content="Confirmar Senha" HorizontalAlignment="Left" Margin="86,236,0,0" VerticalAlignment="Top" Width="414" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF"/>
-        <PasswordBox x:Name="pwdSenhaConf" HorizontalAlignment="Left" Margin="86,298,0,0" VerticalAlignment="Top" Height="37" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7" RenderTransformOrigin="0.486,-0.124"/>
-        <Button x:Name="btnCad" Content="Cadastrar" HorizontalAlignment="Left" Margin="153,377,0,0" VerticalAlignment="Top" Width="167" Height="52" FontFamily="Arial Black" FontSize="24" Click="btnCadastrar_Click"/>
+        <PasswordBox x:Name="pwdSenha" HorizontalAlignment="Left" Margin="380,191,0,0" VerticalAlignment="Top" Height="41" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7" RenderTransformOrigin="0.486,-0.124"/>
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="35" Margin="380,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00D7FF" FontSize="32"/>
+        <Label x:Name="lblLogin" Content="Login" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="306" FontSize="36" FontFamily="Arial Black" FontStyle="Italic" Background="{x:Null}" BorderBrush="#FF00FFB4" Foreground="#FF2800FF"/>
+        <Label x:Name="lblSenha" Content="Senha" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="306" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF"/>
+        <Label x:Name="lblSenhaConf" Content="Confirmar Senha" HorizontalAlignment="Left" Margin="16,273,0,0" VerticalAlignment="Top" Width="414" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-1.93"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-0.961"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <PasswordBox x:Name="pwdSenhaConf" HorizontalAlignment="Left" Margin="380,281,0,0" VerticalAlignment="Top" Height="41" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7" RenderTransformOrigin="0.486,-0.124"/>
+        <Button x:Name="btnCad" Content="Cadastrar" HorizontalAlignment="Left" Margin="38,437,0,0" VerticalAlignment="Top" Width="167" Height="52" FontFamily="Arial Black" FontSize="24" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnFechar" Content="Fechar" HorizontalAlignment="Left" Margin="265,437,0,0" VerticalAlignment="Top" Width="165" Height="52" FontSize="22" FontFamily="Arial Black" Click="btnFechar_Click"/>
+        <Label x:Name="lblNome" Content="Nome" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="48" Width="135" FontSize="36" FontFamily="Arial Black" Foreground="#FF1D00FF"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="48" Margin="380,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" CaretBrush="#FF33495F" Background="#FF00E2FF">
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFF6F6F6" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
 
     </Grid>
 </Window>

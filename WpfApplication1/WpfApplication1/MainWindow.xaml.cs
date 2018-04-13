@@ -29,11 +29,14 @@ namespace WpfApplication1
 
         private void btnCadastrar_Click(object sender, RoutedEventArgs e)
         {
+            CadastroLogin frm = new CadastroLogin();
+            frm.ShowDialog();
 
         }
 
         private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
+          
             Controle controle = new Controle();
             controle.acessar(txtUsuario.Text, pwdSenha.Password);
 
@@ -43,8 +46,7 @@ namespace WpfApplication1
                 if (controle.tem)
                 {
                     MessageBox.Show("Logado com Sucesso!!!", "Entrando", MessageBoxButton.OK, MessageBoxImage.Information);
-                    BemVindo bv = new BemVindo();
-                    bv.Show();
+                    
                 }
                 else
                 {
@@ -57,9 +59,6 @@ namespace WpfApplication1
             }
         }
 
-        private void btnSair_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
+       
     }
 }
