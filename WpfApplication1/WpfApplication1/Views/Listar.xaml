@@ -1,0 +1,47 @@
+﻿<Window x:Class="WpfApplication1.Views.Listar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1.Views"
+        mc:Ignorable="d"
+        Title="Listar" Height="325.745" Width="707.236">
+    <Grid>
+        <DataGrid x:Name="dtCliente"
+            AutoGenerateColumns="False"
+            SelectionUnit="FullRow"
+            SelectionMode="Extended"
+            CanUserReorderColumns="True"
+            CanUserResizeRows="True" Margin="0,0,0,10">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding Nome}" Header="Nome do cliente"/>
+                <DataGridTextColumn Binding="{Binding CPF}"  Header="CPF"/>
+                <DataGridTextColumn Binding="{Binding Endereco }" Header="Endereço"/>
+                <DataGridTextColumn Binding="{Binding Numero}" Header="Numero"/>
+                <DataGridTextColumn Binding="{Binding Complemento}" Header="Complemento"/>
+                <DataGridTextColumn Binding="{Binding Telefone}" Header="Telefone"/>
+                <DataGridTextColumn Binding="{Binding Celular}" Header="Celular"/>
+                <DataGridTextColumn Binding="{Binding NomePet}" Header="NomePet"/>
+                <DataGridTextColumn Binding="{Binding Raca}" Header="Raça"/>
+                <DataGridTextColumn Binding="{Binding Idade}" Header="Idade"/>
+                <DataGridTextColumn Binding="{Binding Data}" Header="Data"/>
+                <DataGridTextColumn Binding="{Binding Sexo}" Header="Sexo"/>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="EditarClick">Alterar</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Click="ExcluirClick">Excluir</Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

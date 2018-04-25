@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApplication1.Views.RelatorioCaixa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1.Views"
+        xmlns:rv="clr-namespace:Microsoft.Reporting.WinForms;assembly=Microsoft.ReportViewer.WinForms"
+        mc:Ignorable="d"
+        Title="RelatorioCaixa" Height="501.88" Width="808.647">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="277*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="193*"/>
+        </Grid.RowDefinitions>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="400" Margin="10,47,0,0" VerticalAlignment="Top" Width="781" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <rv:ReportViewer x:Name="ReportViewer" Load="ReportViewer_Load"/>
+        </WindowsFormsHost>
+    </Grid>
+</Window>

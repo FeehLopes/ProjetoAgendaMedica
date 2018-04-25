@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WpfApplication1.Controller
+namespace WpfApplication1.DAL
 {
     class Conexao
     {
@@ -13,8 +13,9 @@ namespace WpfApplication1.Controller
 
         public Conexao()
         {
-            con.ConnectionString = @"Data Source = (localdb)\MSSQLLocalDB; Initial Catalog = WpfApplication1.Controller.Context; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = True; ApplicationIntent = ReadWrite; MultiSubnetFailover = False";
+            con.ConnectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=WpfApplication1.DAL.Context;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
         }
+       
 
         public SqlConnection conectar()
         {
@@ -33,4 +34,6 @@ namespace WpfApplication1.Controller
             }
         }
     }
+
+    // Esse metodo foi usado para que haja a conexão com o banco, fazendo com que as outras class se conecte ao bd
 }

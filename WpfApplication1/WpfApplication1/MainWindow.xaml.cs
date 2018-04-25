@@ -45,8 +45,10 @@ namespace WpfApplication1
 
                 if (controle.tem)
                 {
-                    MessageBox.Show("Logado com Sucesso!!!", "Entrando", MessageBoxButton.OK, MessageBoxImage.Information);
-                    
+                    //MessageBox.Show("Logado com Sucesso!!!", "Entrando", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Principal frm = new Principal();
+                    frm.ShowDialog();
+                    this.Close();
                 }
                 else
                 {

@@ -43,9 +43,12 @@
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,15 +58,46 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DAL\RegistroDAO.cs" />
+    <Compile Include="Model\Registro.cs" />
+    <Compile Include="Views\Caixa.xaml.cs">
+      <DependentUpon>Caixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Listar.xaml.cs">
+      <DependentUpon>Listar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RelatorioCaixa.xaml.cs">
+      <DependentUpon>RelatorioCaixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RetiradaCaixa.xaml.cs">
+      <DependentUpon>RetiradaCaixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="_WpfApplication1_DAL_ContextDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_WpfApplication1_DAL_ContextDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_WpfApplication1_DAL_ContextDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet2.xsd</DependentUpon>
+    </Compile>
     <Page Include="Views\CadastroCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -76,14 +110,17 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DAL\ClienteDAO.cs" />
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDAO.cs" />
     <Compile Include="DAL\Context.cs" />
-    <Compile Include="Migrations\201804092004306_Incial.cs" />
-    <Compile Include="Migrations\201804092004306_Incial.Designer.cs">
-      <DependentUpon>201804092004306_Incial.cs</DependentUpon>
+    <Compile Include="DAL\Singleton.cs" />
+    <Compile Include="Migrations\201804182239528_Inicial.cs" />
+    <Compile Include="Migrations\201804182239528_Inicial.Designer.cs">
+      <DependentUpon>201804182239528_Inicial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Cliente.cs" />
     <Compile Include="Model\Controle.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Views\CadastroCliente.xaml.cs">
@@ -97,7 +134,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Caixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Listar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Principal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RelatorioCaixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RetiradaCaixa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -122,19 +175,54 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\201804092004306_Incial.resx">
-      <DependentUpon>201804092004306_Incial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201804182239528_Inicial.resx">
+      <DependentUpon>201804182239528_Inicial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\ListaCaixa.rdlc" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\WpfApplication1.Model.Registro.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="_WpfApplication1_DAL_ContextDataSet.xsc">
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_WpfApplication1_DAL_ContextDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet.xss">
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet1.xsc">
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_WpfApplication1_DAL_ContextDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet1.xss">
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet2.xsc">
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_WpfApplication1_DAL_ContextDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_WpfApplication1_DAL_ContextDataSet2.xss">
+      <DependentUpon>_WpfApplication1_DAL_ContextDataSet2.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -144,6 +232,24 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

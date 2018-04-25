@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1.Views.RetiradaCaixa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1.Views"
+        mc:Ignorable="d"
+        Title="RetiradaCaixa" Height="300" Width="461.278">
+    <Grid>
+        <Label x:Name="lblSaldo" Content="Saldo:&#xD;&#xA;" HorizontalAlignment="Left" Margin="54,77,0,0" VerticalAlignment="Top" Width="49" Height="28"/>
+        <TextBox x:Name="txtValorServico" HorizontalAlignment="Left" Height="23" Margin="162,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.215,-0.25"/>
+        <Label x:Name="lblCaixaTitulo" Content="Caixa&#xD;&#xA;" HorizontalAlignment="Left" Margin="199,0,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label x:Name="lblValorSaldo" Content="" HorizontalAlignment="Left" Margin="162,77,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblValorServico" Content="Valor Retirada:" HorizontalAlignment="Left" Margin="44,129,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="176,179,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.14,0.621" Click="btnSalvar_Click"/>
+
+    </Grid>
+</Window>
