@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApplication1.Views"
         mc:Ignorable="d"
-        Title="CadastroLogin" Height="532.453" Width="745.121">
+        Title="CadastroLogin" Height="532.453" Width="815.181">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#FF006FFF"/>
             <GradientStop Color="#FF070102" Offset="0.012"/>
         </LinearGradientBrush>
     </Window.Background>
-    <Grid Margin="0,0,25,0" Background="Black">
-        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="37" Margin="168,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00D7FF" FontSize="32"/>
-        <Label x:Name="lblLogin" Content="Login :" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top" Width="306" FontSize="36" FontFamily="Arial Black" FontStyle="Italic" Background="{x:Null}" BorderBrush="#FF00FFB4" Foreground="#FF2800FF"/>
-        <Label x:Name="lblSenha" Content="Senha :" HorizontalAlignment="Left" Margin="10,191,0,0" VerticalAlignment="Top" Width="306" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF"/>
-        <Label x:Name="lblSenhaConf" Content="Confirmar Senha :" HorizontalAlignment="Left" Margin="16,273,0,0" VerticalAlignment="Top" Width="414" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF" RenderTransformOrigin="0.5,0.5">
+    <Grid Margin="0,0,2,0" Background="White">
+        <TextBox x:Name="txtLogin" HorizontalAlignment="Left" Height="37" Margin="179,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00EEFF" FontSize="24"/>
+        <Label x:Name="lblLogin" Content="Login :" HorizontalAlignment="Left" Margin="10,193,0,0" VerticalAlignment="Top" Width="153" FontSize="36" FontFamily="Arial Black" FontStyle="Italic" Background="{x:Null}" BorderBrush="#FF00FFB4" Foreground="#FF2800FF"/>
+        <Label x:Name="lblSenha" Content="Senha :" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" Width="153" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF"/>
+        <Label x:Name="lblSenhaConf" Content="Confirmar Senha :" HorizontalAlignment="Left" Margin="10,307,0,0" VerticalAlignment="Top" Width="366" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF" RenderTransformOrigin="0.5,0.5">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -26,13 +26,14 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <PasswordBox x:Name="pwdSenhaConf" HorizontalAlignment="Left" Margin="374,281,0,0" VerticalAlignment="Top" Height="38" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7"/>
-        <Button x:Name="btnCad" Content="Cadastrar" HorizontalAlignment="Left" Margin="99,371,0,0" VerticalAlignment="Top" Width="167" Height="52" FontFamily="Arial Black" FontSize="24" Click="btnCadastrar_Click"/>
-        <Button x:Name="btnFechar" Content="Fechar" HorizontalAlignment="Left" Margin="449,371,0,0" VerticalAlignment="Top" Width="165" Height="52" FontSize="22" FontFamily="Arial Black" Click="btnFechar_Click"/>
-        <Label x:Name="lblNome" Content="Nome :" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="48" Width="153" FontSize="36" FontFamily="Arial Black" Foreground="#FF1D00FF"/>
-        <Image x:Name="___WpfApplication1_component_Image4_png" Margin="492,10,-23,254" Source="/WpfApplication1;component/Image4.png" Stretch="Fill"/>
-        <PasswordBox x:Name="pwdSenha" HorizontalAlignment="Left" Margin="176,191,0,0" VerticalAlignment="Top" Height="38" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="37" Margin="163,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00D7FF" FontSize="32"/>
+        <PasswordBox x:Name="pwdSenhaConf" HorizontalAlignment="Left" Margin="382,314,0,0" VerticalAlignment="Top" Height="38" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00EEFF" FontSize="24"/>
+        <Button x:Name="btnCad" Content="Cadastrar" HorizontalAlignment="Left" Margin="107,417,0,0" VerticalAlignment="Top" Width="167" Height="52" FontFamily="Arial Black" FontSize="24" Click="btnCadastrar_Click"/>
+        <Button x:Name="btnFechar" Content="Fechar" HorizontalAlignment="Left" Margin="449,417,0,0" VerticalAlignment="Top" Width="165" Height="52" FontSize="22" FontFamily="Arial Black" Click="btnFechar_Click"/>
+        <Label x:Name="lblNome" Content="Nome :" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Height="48" Width="153" FontSize="36" FontFamily="Arial Black" Foreground="#FF1D00FF"/>
+        <PasswordBox x:Name="pwdSenha" HorizontalAlignment="Left" Margin="179,255,0,0" VerticalAlignment="Top" Height="38" Width="314" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00EEFF" FontSize="24"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="37" Margin="179,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="314" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00EEFF" FontSize="24"/>
+        <Image x:Name="___WpfApplication1_component_Image11_png" Margin="507,45,10,209" Source="/WpfApplication1;component/Image11.png" Stretch="Fill"/>
+        <Label x:Name="lblCadastro" Content="CADASTRO" HorizontalAlignment="Left" Margin="171,0,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="48" Foreground="#FF1D00FF"/>
 
     </Grid>
 </Window>

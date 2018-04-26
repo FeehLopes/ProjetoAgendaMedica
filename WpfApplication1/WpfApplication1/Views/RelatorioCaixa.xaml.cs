@@ -33,6 +33,7 @@ namespace WpfApplication1.Views
             Controle controle = new Controle();
 
             lstDadosCaixa = controle.SelectAllRegistros();
+            
 
             if (lstDadosCaixa != null && lstDadosCaixa.Count() > 0)
             {
@@ -57,7 +58,7 @@ namespace WpfApplication1.Views
             ReportViewer.RefreshReport();
         }
 
-        protected void LoadRelatorio()
+        private void LoadRelatorio()
         {
             var lstDadosCaixa = new List<Registro>();
             var lstDadosCaixaRelatorio = new List<Registro>();

@@ -247,8 +247,8 @@ namespace WpfApplication1
 
                     this.cboSexo.SelectedValue = cliente.Sexo;
 
-                    btnCadastrar.Visibility = Visibility.Hidden;
-                    btnAlterar.Visibility = Visibility.Visible;
+                    //btnCadastrar.Visibility = Visibility.Hidden;
+                    //btnAlterar.Visibility = Visibility.Visible;
                 }
                 else
                 {

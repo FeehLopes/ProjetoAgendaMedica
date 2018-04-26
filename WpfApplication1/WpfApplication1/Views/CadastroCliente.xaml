@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespac:WpfApplication1"
         mc:Ignorable="d"
-        Title="CadastroCliente" Height="515.894" Width="468.316">
+        Title="CadastroCliente" Height="566.894" Width="468.316">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="Black" Offset="1"/>
@@ -15,42 +15,43 @@
     <Grid>
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="Black" Offset="1"/>
+                <GradientStop Color="White" Offset="1"/>
                 <GradientStop Color="#FFF0F0F0" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="lblNome" Content="Nome:" HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblCPF" Content="CPF:" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblEnd" Content="Endereço:" HorizontalAlignment="Left" Margin="10,113,0,0" VerticalAlignment="Top" Foreground="#FF0007FF"/>
-        <Label x:Name="lblComplemento" Content="Complemento:" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblTel" Content="Telefone:" HorizontalAlignment="Left" Margin="12,201,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.73,-0.342" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblCel" Content="Celular:" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblNumero" Content="Número:" HorizontalAlignment="Left" Margin="12,144,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.29,3.89" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblRaca" Content="Raça:" HorizontalAlignment="Left" Margin="12,298,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblNomePet" Content="Nome:" HorizontalAlignment="Left" Margin="10,329,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblIdade" Content="Idade:" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <Label x:Name="lblData" Content="Data Nascimento:" HorizontalAlignment="Left" Margin="10,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.052,0.096" Foreground="#FF0007FF" FontSize="14"/>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="111,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="111,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtEnd" HorizontalAlignment="Left" Height="23" Margin="111,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtNum" HorizontalAlignment="Left" Height="23" Margin="111,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtComplemento" HorizontalAlignment="Left" Height="23" Margin="111,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="111,198,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="23" Margin="111,227,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtRaca" HorizontalAlignment="Left" Height="23" Margin="111,298,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPet" HorizontalAlignment="Left" Height="23" Margin="111,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtIdade" HorizontalAlignment="Left" Height="23" Margin="111,360,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="80,442,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.36,-0.364" FontFamily="Arial Black" Click="btnCadastrar_Click"/>
-        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="198,442,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" Click="btnAlterar_Click"/>
-        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="313,442,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" Click="btnVoltar_Click"/>
-        <DatePicker x:Name="dtpNascimento" HorizontalAlignment="Left" Margin="129,394,0,0" VerticalAlignment="Top"/>
-        <Image x:Name="___WpfApplication1_component_Image5_png" Margin="256,227,10,76" Source="/WpfApplication1;component/Image5.png" Stretch="Fill"/>
-        <Image x:Name="___WpfApplication1_component_Image6_png" Margin="256,10,10,288" Source="/WpfApplication1;component/Image6.png" Stretch="Fill"/>
-        <ComboBox x:Name="cboSexo" HorizontalAlignment="Left" Margin="256,298,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CboSexo_SelectionChanged" />
+        <Label x:Name="lblNome" Content="Nome:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblCPF" Content="CPF:" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblEnd" Content="Endereço:" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblComplemento" Content="Complemento:" HorizontalAlignment="Left" Margin="-3,216,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblTel" Content="Telefone:" HorizontalAlignment="Left" Margin="12,248,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.73,-0.342" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblCel" Content="Celular:" HorizontalAlignment="Left" Margin="10,274,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblNumero" Content="Número:" HorizontalAlignment="Left" Margin="12,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.29,3.89" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblRaca" Content="Raça:" HorizontalAlignment="Left" Margin="10,346,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblNomePet" Content="Nome:" HorizontalAlignment="Left" Margin="10,377,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblIdade" Content="Idade:" HorizontalAlignment="Left" Margin="12,408,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <Label x:Name="lblData" Content="Data Nascimento:" HorizontalAlignment="Left" Margin="10,441,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.052,0.096" Foreground="#FF0007FF" FontSize="16"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="111,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="24" Margin="111,134,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEnd" HorizontalAlignment="Left" Height="24" Margin="111,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNum" HorizontalAlignment="Left" Height="24" Margin="111,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtComplemento" HorizontalAlignment="Left" Height="24" Margin="111,216,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="24" Margin="111,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="22" Margin="111,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtRaca" HorizontalAlignment="Left" Height="24" Margin="72,348,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtPet" HorizontalAlignment="Left" Height="22" Margin="72,385,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtIdade" HorizontalAlignment="Left" Height="24" Margin="72,412,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="24,494,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.36,-0.364" FontFamily="Arial Black" Click="btnCadastrar_Click" FontSize="16"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="177,494,0,0" VerticalAlignment="Top" Width="75" FontFamily="Arial Black" Click="btnAlterar_Click" FontSize="16"/>
+        <Button x:Name="btnVoltar" Content="Voltar" HorizontalAlignment="Left" Margin="312,494,0,0" VerticalAlignment="Top" Width="74" FontFamily="Arial Black" Click="btnVoltar_Click" FontSize="16"/>
+        <DatePicker x:Name="dtpNascimento" HorizontalAlignment="Left" Margin="150,445,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cboSexo" HorizontalAlignment="Left" Margin="236,346,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="CboSexo_SelectionChanged" />
         <TextBlock x:Name="txtIdCliente" Visibility="Hidden" HorizontalAlignment="Left" Margin="12,462,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-        <Label x:Name="lblNomeCPF" Content="Pesquisar:" HorizontalAlignment="Left" Margin="25,22,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="14"/>
-        <TextBox x:Name="txtNomeCPF" HorizontalAlignment="Left" Height="23" Margin="111,22,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnPesquisarCliente" Content="Pesquisar" HorizontalAlignment="Left" Margin="268,28,0,0" VerticalAlignment="Top" Width="76" FontFamily="Arial Black" Click="btnPesquisarCliente_Click"/>
+        <Label x:Name="lblNomeCPF" Content="Pesquisar:" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" Foreground="#FF0007FF" FontSize="16"/>
+        <TextBox x:Name="txtNomeCPF" HorizontalAlignment="Left" Height="23" Margin="111,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnPesquisarCliente" Content="Pesquisar" HorizontalAlignment="Left" Margin="262,36,0,0" VerticalAlignment="Top" Width="109" FontFamily="Arial Black" Click="btnPesquisarCliente_Click" FontSize="16"/>
+        <Label x:Name="lblPet" Content="PET" HorizontalAlignment="Left" Margin="24,306,0,0" VerticalAlignment="Top" FontSize="22" FontFamily="Arial Black"/>
+        <Label x:Name="lblCliente" Content="CLIENTE" HorizontalAlignment="Left" Margin="12,69,0,0" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="22"/>
+        <Image x:Name="___WpfApplication1_component_Image8_png" Margin="236,92,26,269" Source="/WpfApplication1;component/Image8.png" Stretch="Fill"/>
 
 
     </Grid>

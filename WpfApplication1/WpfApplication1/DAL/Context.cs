@@ -19,12 +19,12 @@ namespace WpfApplication1.DAL
                  );
         }
 
-               
-        public DbSet<Login> Logins{ get; set; }
+
+        public DbSet<Login> Logins { get; set; }
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Registro> Registros { get; set; }
-        
-        
+
+
         // 
     }
 }

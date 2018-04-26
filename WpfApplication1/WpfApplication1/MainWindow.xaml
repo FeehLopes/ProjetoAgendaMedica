@@ -16,11 +16,11 @@
             </TransformGroup>
         </Grid.RenderTransform>
         <Image x:Name="logo_pet_independencia_jpg" Margin="10,10,10,251" Source="logo pet independencia.jpg" Stretch="Fill"/>
-        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="39" Margin="355,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00D7FF" FontSize="32"/>
+        <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Height="39" Margin="355,268,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="306" FontFamily="Arial" Visibility="Visible" CaretBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" Foreground="Black" OpacityMask="{DynamicResource {x:Static SystemColors.InactiveCaptionTextBrushKey}}" Background="#FF00EEFF" FontSize="24"/>
         <Label x:Name="lblUsuario" Content="login :" HorizontalAlignment="Left" Margin="168,256,0,0" VerticalAlignment="Top" Width="306" FontSize="36" FontFamily="Arial Black" FontStyle="Italic" Background="{x:Null}" BorderBrush="#FF00FFB4" Foreground="#FF2800FF"/>
         <Label x:Name="lblSenha" Content="   Senha :" HorizontalAlignment="Left" Margin="143,334,0,0" VerticalAlignment="Top" Width="306" Height="57" FontSize="36" FontFamily="Arial Black" BorderBrush="#FFF0F0F0" Foreground="#FF0600FF"/>
         <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Left" Margin="556,421,0,0" VerticalAlignment="Top" Width="167" Height="52" FontFamily="Arial Black" FontSize="24" Click="btnEntrar_Click"/>
         <Button x:Name="btnCadastrar" Content="Cadastrar" HorizontalAlignment="Left" Margin="194,421,0,0" VerticalAlignment="Top" Width="167" Height="52" FontFamily="Arial Black" FontSize="24" Click="btnCadastrar_Click"/>
-        <PasswordBox x:Name="pwdSenha" HorizontalAlignment="Left" Margin="355,334,0,0" VerticalAlignment="Top" Height="38" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00FFD7"/>
+        <PasswordBox x:Name="pwdSenha" HorizontalAlignment="Left" Margin="355,334,0,0" VerticalAlignment="Top" Height="38" Width="306" Visibility="Visible" SelectionBrush="#FF1B7DE0" Background="#FF00EEFF" FontSize="24"/>
     </Grid>
 </Window>

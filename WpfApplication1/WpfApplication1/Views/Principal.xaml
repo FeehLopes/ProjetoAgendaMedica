@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="Principal" Height="300" Width="300">
     <Grid>
-        <Button x:Name="btnCadastro" Content="Cliente" HorizontalAlignment="Left" Margin="97,23,0,0" VerticalAlignment="Top" Width="93" FontSize="20" FontFamily="Arial Black" Click="btnCadastro_Click"/>
-        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="97,98,0,0" VerticalAlignment="Top" Width="93" FontSize="20" FontFamily="Arial Black" Click="btnListar_Click"/>
-        <Button x:Name="btnCaixa" Content="Entrada Serviço" HorizontalAlignment="Left" Margin="51,144,0,0" VerticalAlignment="Top" Width="216" FontSize="20" FontFamily="Arial Black" Height="30" Click="btnCaixa_Click" RenderTransformOrigin="0.41,-0.635"/>
-        <Button x:Name="btnRetiradaCaixa" Content="Retirada Caixa" HorizontalAlignment="Left" Margin="51,191,0,0" VerticalAlignment="Top" Width="216" FontSize="20" FontFamily="Arial Black" Height="30" Click="btnRetirada_Click" RenderTransformOrigin="0.41,-0.635"/>
-        <Button x:Name="btnRelatorioCaixa" Content="Relatorio Caixa" HorizontalAlignment="Left" Margin="142,238,0,0" VerticalAlignment="Top" Width="93" Click="btnRelatorioCaixa_Click"/>
+        <Button x:Name="btnCadastro" Content="Cliente" HorizontalAlignment="Left" Margin="32,36,0,0" VerticalAlignment="Top" Width="216" FontSize="20" FontFamily="Arial Black" Click="btnCadastro_Click" RenderTransformOrigin="0.66,0.509"/>
+        <Button x:Name="btnListar" Content="Listar" HorizontalAlignment="Left" Margin="32,70,0,0" VerticalAlignment="Top" Width="216" FontSize="20" FontFamily="Arial Black" Click="btnListar_Click"/>
+        <Button x:Name="btnCaixa" Content="Entrada Serviço" HorizontalAlignment="Left" Margin="32,104,0,0" VerticalAlignment="Top" Width="216" FontSize="20" FontFamily="Arial Black" Height="30" Click="btnCaixa_Click" RenderTransformOrigin="0.41,-0.635"/>
+        <Button x:Name="btnRetiradaCaixa" Content="Retirada Caixa" HorizontalAlignment="Left" Margin="32,139,0,0" VerticalAlignment="Top" Width="216" FontSize="20" FontFamily="Arial Black" Height="30" Click="btnRetirada_Click" RenderTransformOrigin="0.41,-0.635"/>
+        <Button x:Name="btnRelatorioCaixa" Content="Relatorio Caixa" HorizontalAlignment="Left" Margin="32,174,0,0" VerticalAlignment="Top" Width="216" Click="btnRelatorioCaixa_Click" FontFamily="Arial Black" FontSize="20"/>
 
     </Grid>
 </Window>

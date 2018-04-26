@@ -9,7 +9,7 @@
     <Grid>
         <Label x:Name="lblSaldo" Content="Saldo:&#xD;&#xA;" HorizontalAlignment="Left" Margin="54,77,0,0" VerticalAlignment="Top" Width="49" Height="28"/>
         <TextBox x:Name="txtValorServico" HorizontalAlignment="Left" Height="23" Margin="162,132,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.215,-0.25"/>
-        <Label x:Name="lblCaixaTitulo" Content="Caixa&#xD;&#xA;" HorizontalAlignment="Left" Margin="199,0,0,0" VerticalAlignment="Top" Width="52"/>
+        <Label x:Name="lblCaixaTitulo" Content="Caixa&#xD;&#xA;" HorizontalAlignment="Left" Margin="199,0,0,0" VerticalAlignment="Top" Width="83" FontFamily="Arial Black" FontSize="20"/>
         <Label x:Name="lblValorSaldo" Content="" HorizontalAlignment="Left" Margin="162,77,0,0" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="lblValorServico" Content="Valor Retirada:" HorizontalAlignment="Left" Margin="44,129,0,0" VerticalAlignment="Top"/>
         <Button x:Name="btnSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="176,179,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="1.14,0.621" Click="btnSalvar_Click"/>
